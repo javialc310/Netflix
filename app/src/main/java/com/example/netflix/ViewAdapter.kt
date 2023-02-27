@@ -16,11 +16,6 @@ RecyclerView.Adapter<ViewAdapter.Pager2ViewHolder>(){
         val itemTitulo = item.findViewById<TextView>(R.id.tituloView)
         val itemDesc= item.findViewById<TextView>(R.id.descripcionView)
         val itemImagen= item.findViewById<ImageView>(R.id.imagenView)
-        init {
-            itemImagen.setOnClickListener { v: View->
-                val position= adapterPosition
-            }
-        }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewAdapter.Pager2ViewHolder {
